@@ -1,0 +1,80 @@
+.b-form {
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+}
+
+.b-i-name,
+.b-i-age,
+.b-a-message {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.b-a-message {
+    width: 200px;
+    height: 100px;
+}
+
+.b-message-text {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-save,
+.btn-clear {
+    position: relative;
+    right: -200px;
+    display: block;
+    margin-top: 5px;
+}
+
+.btn-delete {
+    margin: -5px 5px;
+    float: right;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background: #7564ff;
+}
+
+.b-messages-wrap,
+.b-message-wrap {
+    margin-top: 20px;
+    position: relative;
+}
+
+.b-message-wrap {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.brd-red {
+    border: 2px solid #ff1370;
+}
+
+.fl-right {
+    float: right;
+}
+
+.fl-left {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.ta-edit {
+    width: 85%;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}

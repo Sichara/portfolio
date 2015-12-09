@@ -1,0 +1,63 @@
+.msg-page .profile-order-status-label {
+    width: 14.15385em;
+}
+.msg-page .profile-order-heading-list {
+    cursor: default;
+}
+.msg-page .profile-orders {
+    padding-bottom: 25px;
+}
+.msg-page .m-main-l-new {
+    background: #fb3f4c;
+    color: #fff;
+    font-size: 9px;
+    line-height: 10px;
+    display: block;
+    border-radius: 10px;
+    padding: 2px 4px 1px;
+    width: 23px;
+    float: left;
+    margin: 2px 4px 0 0;
+}
+.msg-page .head-msg-table {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+.msg-page .head-msg-table:hover {
+    border:none;
+    border-bottom: 1px solid #e0e0e0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.msg-page .msg-show:hover {
+    border: 1px solid #e0e0e0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.msg-page .head-msg-table .profile-order-details {
+    border-right: 0;
+}
+.msg-page .msg-show .profile-order-details {
+    border-right: 0;
+}
+.msg-page .head-msg-table:before, .msg-show:before {
+    content: "";
+    background: none;;
+    border: none;
+    border-left: 0;
+    border-radius: 0;
+    width: 0px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+}
+.msg-page .head-msg-table .profile-order-status-label {
+    border-left:0;
+}
+.msg-page .profile-order-i {
+    margin-bottom: 0.53846em;
+}

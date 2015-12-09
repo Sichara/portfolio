@@ -1,0 +1,23 @@
+.m-main-btn-link.btn-link-green:before {
+    background-position: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.m-main-btn-link.btn-link-green:after {
+    top: 0px;
+}
+
+.m-main-btn-link:hover:after, .m-main-btn-link:active:after, .m-main-btn-link.pressed:after {
+    position: relative;
+    content: '';
+    display: block;
+    top: 0px;
+    height: 3px;
+}
+
+.m-main-btn-link.btn-link-green:before {
+    background-position: 0px;
+    width: 0px;
+    height: 0px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ajax",
+  "version": "1.0.0",
+  "description": "Simple server for test ajax",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "IlyaLytvynov",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "node-static": "^0.7.7"
+  }
+}

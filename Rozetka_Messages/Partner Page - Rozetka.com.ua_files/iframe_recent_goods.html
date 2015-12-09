@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0045)https://rg.rozetka.com.ua/iframe_recent_goods -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+
+	if (window.opera) {
+		try {
+			document.domain = 'rozetka.com.ua';
+		} catch (e) {
+			console.log(e);
+		}
+	} else {
+		document.domain = 'rozetka.com.ua';
+	}
+
+	function listener(event){
+
+		if (event.data.action == 'xmlhttp') {
+
+			var url = event.data.url;
+
+			var checkPart = String(event.origin).substr(-1 - String(document.domain).length);
+
+			if (checkPart != '.' + document.domain && checkPart != '/' + document.domain) {
+				return;
+			}
+
+			var getXmlHttp = function () {
+				var xmlhttp;
+				try {
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch (e) {
+					try {
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					} catch (E) {
+						xmlhttp = false;
+					}
+				}
+				if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+					xmlhttp = new XMLHttpRequest();
+				}
+				return xmlhttp;
+			};
+
+			var xmlhttp = getXmlHttp();
+
+			xmlhttp.open('GET', url, true);
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4) {
+					if(xmlhttp.status == 200) {
+						window.top.postMessage(xmlhttp.responseText, event.origin);
+					}
+				}
+			};
+			xmlhttp.send(null);
+		}
+	}
+
+	function iframeStorage(e) {
+
+		if (e.data.action == 'setItem') {
+
+			window.localStorage.setItem(e.data.item_name, e.data.item_value);
+
+		} else if (e.data.action == 'clear') {
+
+			window.localStorage.clear();
+
+		} else if (e.data.action == 'getStorage') {
+
+			var data = [];
+
+			for (var name in window.localStorage) {
+
+				var item = { };
+
+				item['item_name'] = name;
+
+				item['item_value'] = window.localStorage[name];
+
+				data.push(item);
+
+			}
+
+			window.top.postMessage(JSON.stringify(data), e.origin);
+
+		} else if (e.data.action == 'delStorage') {
+
+			if (window.localStorage[e.data.item_name] != undefined) {
+
+				delete window.localStorage[e.data.item_name];
+
+			}
+		}
+	}
+
+	if (window.addEventListener){
+		window.addEventListener("message", listener,false);
+		window.addEventListener("message", iframeStorage, false);
+	} else {
+		window.attachEvent("onmessage", listener);
+		window.attachEvent("onmessage", iframeStorage);
+	}
+
+
+</script>
+</head><body></body></html>

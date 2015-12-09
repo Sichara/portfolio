@@ -1,0 +1,43 @@
+.merchant-review-btn .btn-link {
+    padding: 10px 20px;
+}
+
+.merchant-review-header {
+    margin: 4em auto;
+}
+
+.merchant-review-inform {
+    margin: 2em auto;
+    min-width: 35em;
+}
+
+.merchant-review-btn,
+.merchant-review-share-layout,
+.merchant-review-promotion,
+.merchant-review-img,
+.merchant-review-header {
+    text-align: center;
+}
+
+.merchant-review-img,
+.merchant-review-btn,
+.merchant-review-share-layout {
+    margin: 2em;
+}
+
+.merchant-review-share-title,
+.merchant-review-promotion {
+    margin: 1em;
+}
+
+.merchant-review-title {
+    display: inline-block;
+}
+
+.merchant-review-title:before {
+    background-position: 0 -11696px;
+    width: 23px;
+    height: 20px;
+    left: -30px;
+    top: 10px;
+}

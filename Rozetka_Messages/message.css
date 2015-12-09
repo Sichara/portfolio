@@ -1,0 +1,208 @@
+.empty-message-wrap {
+    /*.wishlist-firstlist-i {*/
+    color: #666;
+    margin-bottom: 1.92308em;
+    /*end .wishlist-firstlist-i*/
+
+    /*.user-promo {*/
+    /*background-image: url("https://i.rozetka.com.ua/design/user_promo_bg.png");*/
+    background-color: #fff;
+    border-radius: 3px;
+    max-width: 78.30769em;
+    height: 55.15385em;
+    border: 1px dashed #ccd4e0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    position: relative;
+    /*end .user-promo*/
+
+    padding: 2.30769em 2.92308em 4.07692em 5.76923em;
+    /*.wishlist-firstlist-wrap возможно эти цифры как-то вычисляются в js*/
+}
+
+.how-to-connect, .warning-message {
+/*.wishlist-firstlist-text {*/
+    font-size: 1.15385em;
+    line-height: 1.2em;
+    /*end .wishlist-firstlist-text*/
+    padding: 1em 0;
+}
+
+.empty-message-text {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    width: 35em;
+}
+
+.how-to-connect-firstline {
+    font-size: 1.20462em;
+
+/*.wishlist-firstlist-subtitle {*/
+    font-weight: bold;
+    margin-bottom: 5px;
+    /*end .wishlist-firstlist-subtitle*/
+}
+
+.how-to-connect-text {
+    margin: 3em 0 0 38.1em;
+}
+
+.how-to-connect-img {
+    float: left;
+    width: 38em;
+}
+
+.warning-message-wrap {
+    color: #333;
+    background: #fffae2;
+    border: 1px solid #fbde84;
+    padding: 1.5em 1em;
+    max-width: 37em;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.i-warning-message:before {
+    background-image: url("files/sprite-warning.png") !important;
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 27px;
+    top: 13px;
+}
+
+.warning-message-text {
+    margin-left: 65px;
+}
+
+/*---------------------Второе и третьи задания-------------------------------*/
+.category {
+    margin-bottom: 6em;
+}
+
+.category-title {
+/*.wishlist-firstlist-subtitle {*/
+    font-size: 1.38462em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.columns-title {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0.4em 0;
+    margin: 1.54em 0 0.76em;
+}
+.columns-list {
+    font-size: 0.937em;
+    line-height: 1;
+    /*margin-bottom: 1.6em;*/
+    color: #666;
+}
+
+.partner-wrap {
+    position: relative;
+}
+
+.partner {
+    padding: 1.5em 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 5px;
+}
+
+.partner:last-child {
+    border-bottom-color: transparent;
+}
+
+.partner-details-subi {
+    margin-bottom: 1.3em;
+}
+
+.partner-name-question-wrap {
+    /*.detail-dwp-question-wrap*/
+    margin-bottom: 0.76923em;
+    /**/
+    line-height: 65px;
+}
+
+.delivery-list > li:before,
+.payment-list > li:before  {
+    content: "-";
+    margin-right: 0.4em;
+}
+
+.partner-full-details-link {
+    /*detail-dwp-delivery-link*/
+    display: inline-block;
+    padding-right: 18px;
+}
+
+.partner-full-details-link:before {
+    background-position: 0 -9823px;
+    width: 14px;
+    height: 8px;
+    top: 50%;
+    margin-top: -2px;
+    right: 0;
+}
+
+.partner-full-details-link:hover {
+    text-decoration: none;
+}
+
+.partner-full-details-link:hover:before {
+    background-position: 0 -9816px;
+}
+
+.partner-full-details-link:active:before {
+    background-position: 0 -9809px;
+}
+
+.partner-full-details-link-open:before {
+    background-position: 0 -9844px;
+}
+
+.partner-full-details-link-open:active:before {
+    background-position: 0 -9830px;
+}
+
+.partner-full-details-link-open:hover:before {
+    background-position: 0 -9837px;
+}
+
+.partner-full-details {
+    color: #666;
+    overflow: hidden;
+    padding: 40px 0;
+    display: none;
+}
+
+.partner-full-details > ul {
+    list-style: decimal;
+    margin-left: 1.5em;
+    line-height: 1.5em;
+}
+
+.partner-full-details > p {
+    font-size: 1.15385em;
+    line-height: 1.2em;
+}
+
+.partner-full-details > h2 {
+    margin-top: 0.58333em;
+}
+
+.partner-full-details > img {
+    margin-left: 0.58333em;
+}
+
+.partner-open {
+    border: 1px solid #a8cbeb;
+    -webkit-box-shadow: 0 0 13px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 13px rgba(0,0,0,.4);
+    box-shadow: 0 0 13px rgba(0,0,0,.4);
+}

@@ -1,0 +1,3 @@
+/* TrafMag.com goods tracking v 1.0.17 */
+(function(img){img.src='//trafmag.rtbsystem.com/images/tracking.gif?vid=4524935113337631141';img.width=1;img.height=1;img.alt='';img.setAttribute('style', 'width:0;height:0;position:absolute;top:-9999px;left:-9999px;');document.body.appendChild(img)}(document.createElement('img')));
+(function(img){img.src='//trafmag.d-agency.net/images/tracking.gif?vid=4524935113337631141';img.width=1;img.height=1;img.alt='';img.setAttribute('style', 'width:0;height:0;position:absolute;top:-9999px;left:-9999px;');document.body.appendChild(img)}(document.createElement('img')));
