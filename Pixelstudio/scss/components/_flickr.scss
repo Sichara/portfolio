@@ -1,0 +1,12 @@
+.b-flickr {
+
+  &__header {
+
+  }
+
+  &__gallery {
+    @include flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

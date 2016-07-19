@@ -1,0 +1,22 @@
+.fence {
+  height: $header-height - 20px;
+  margin-bottom: 10px;
+  position: absolute;
+  width: 100%;
+
+  border-bottom: 10px solid transparent;
+  @include fence($header-bg-color, $header-fence-border-color);
+
+  &::after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+
+    border-bottom: 10px solid transparent;
+    @include fence($header-bg-color, $header-fence-border-color);
+  }
+}

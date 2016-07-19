@@ -1,0 +1,18 @@
+.b-feedback {
+
+  &__input {
+    margin: 35px 0 30px;
+  }
+
+  &__title {
+
+
+    &--grid2 {
+      @include grid(2);
+    }
+  }
+
+  &__buttons {
+    float: right;
+  }
+}

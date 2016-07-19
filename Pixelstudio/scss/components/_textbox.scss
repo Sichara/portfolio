@@ -1,0 +1,23 @@
+.b-textbox {
+  border: 1px solid $textbox-brd-color;
+
+  &__header {
+    font-size: 21px;
+    height: 40px;
+    padding: 10px 12px;
+    background: $textbox-header-bg-color;
+    border-bottom: 1px solid $textbox-brd-color;
+  }
+
+  &__text {
+    padding: 5px 12px;
+
+    background: $textbox-text-bg-color;
+  }
+
+  &__bold-text {
+    font-weight: bold;
+
+  }
+
+}

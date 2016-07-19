@@ -1,0 +1,15 @@
+.b-footer {
+  background: $footer-bg-color;
+  color: $footer-text-color;
+  padding-bottom: 10px;
+
+  &__content {
+    @include grid-container;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid-container;
+      }
+    }
+  }
+}

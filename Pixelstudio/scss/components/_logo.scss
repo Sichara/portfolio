@@ -1,0 +1,17 @@
+.b-logo {
+  width: 145px;
+  height: $header-height;
+  background: $header-logo-bg-color;
+  line-height: $header-height;
+  text-align: center;
+  @include box-shadow(#{0 1px 5px rgba(98, 8, 12, .3), inset 1px 1px 3px rgba(255, 255, 255, .75)});
+
+  &__link {
+    color: #fff;
+    font-size: 22px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

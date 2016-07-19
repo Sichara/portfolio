@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Paradigm + Design Patterns</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <script src="./js/assets/underscore-min.js"></script>
+    <script src="./js/assets/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/utils/mediator.js"></script>
+    <script src="./js/models/cars-model.js"></script>
+    <script src="./js/controllers/top-menu-controller.js"></script>
+    <script src="./js/controllers/right-menu-controller.js"></script>
+    <script src="./js/controllers/viewport-controller.js"></script>
+    <script src="./js/init.js"></script>
+</head>
+<body>
+    <!--<template id="topMenuTemplate">-->
+    <!--<li class="b-menu_item">-->
+    <!--<% _(cars).each(function (car) {%>-->
+    <!--<a href="#" class="b-menu_link bg&#45;&#45;magenta"><%= car.carModel %></a>-->
+    <!--<%})%>-->
+    <!--</li>-->
+    <!--</template>-->
+
+    <template id="topMenuTemplate">
+        <li class="b-menu_item">
+            <a href="#" class="b-menu_link bg--magenta" data-id="{{ id }}">{{ carModel }}</a>
+        </li>
+    </template>
+    <template id="topSubMenuTemplate">
+        <li class="b-menu_item">
+            <a href="#" class="b-menu_link bg--gray" data-id="{{ id }}">{{ name }}</a>
+        </li>
+    </template>
+    <template id="rightMenuTemplate">
+        <li class="b-menu_item">
+            <a href="#" class="b-menu_link bg--red" data-id="{{ id }}">{{ carModel }}</a>
+            <ul class="b-sub-menu">
+
+            </ul>
+        </li>
+    </template>
+    <template id="rightSubMenuTemplate">
+        <li class="b-menu_item">
+            <a href="#" class="b-menu_link bg--blue" data-id="{{ id }}">{{ name }}</a>
+        </li>
+    </template>
+    <template id="viewportTitleTemplate">
+        <p>{{ name }}</p>
+    </template>
+    <template id="viewportTemplate">
+        <img src="{{ link }}" alt="{{ name }}" class="b-viewport_img"/>
+    </template>
+
+    <header>
+        <div class="b-header">
+            <div id="topMenu">
+                <ul class="b-menu b-menu--horizontal"></ul>
+                <ul class="b-sub-menu b-menu--horizontal active"></ul>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="b-article">
+            <ul class="b-menu b-menu--vertical"></ul>
+
+            <div class="b-content">
+                <div class="b-viewport">
+                    <div class="b-viewport_title"></div>
+                    <div class="b-viewport_img-wrap"></div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="b-footer">
+            ePam 2016
+            footer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque, commodi cum cupiditate
+            ea est eveniet facere harum id, nulla obcaecati odio quam quibusdam sapiente tempora tenetur totam velit
+            voluptatem!
+        </div>
+    </footer>
+</body>
+</html>

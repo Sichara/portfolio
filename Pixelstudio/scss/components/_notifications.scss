@@ -1,0 +1,20 @@
+.b-notification {
+  padding: 8px 25px;
+  border: 1px solid $notification-brd-color;
+  margin: 20px 0;
+
+  &--red {
+    border-left: 6px solid $notification-brd-red-color;
+  }
+
+  &--black {
+    border-left: 6px solid $notification-brd-black-color;
+  }
+
+  &--gray {
+    border-left: 6px solid $notification-brd-gray-color;
+  }
+  &--beige {
+    border-left: 6px solid $notification-brd-beige-color;
+  }
+}

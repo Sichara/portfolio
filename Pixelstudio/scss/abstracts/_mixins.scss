@@ -1,0 +1,63 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow:  $box-shadow;
+  box-shadow:  $box-shadow;
+}
+
+@mixin box-sizing($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin fence($color, $border-color) {
+  background-image: linear-gradient($color, $color),
+  linear-gradient(to top right, transparent 50.5%, $color 50.5%),
+  linear-gradient(to top left, transparent 50.5%, $color 50.5%),
+  linear-gradient(to top right, transparent 50.5%, $border-color 50.5%),
+  linear-gradient(to top left, transparent 50.5%, $border-color 50.5%);
+
+  background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 10px 99%, 10px 99%, 10px 101%, 10px 101%;
+  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box;
+}

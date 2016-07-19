@@ -1,0 +1,122 @@
+.b-article {
+  font-family: $article-font;
+
+  &__header {
+    margin: 0 10px 30px;
+    font-size: 45px;
+  }
+
+  &__content {
+    border-top: 1px solid $article-border-color;
+    border-bottom: 1px solid $article-border-color;
+    position: relative;
+    margin: 10px 0;
+    padding: 22px 0;
+    @include grid-container;
+    @include clearfix;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid-container;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      border-top: 6px solid $article-border-color;
+      border-bottom: 6px solid $article-border-color;
+      top: -11px;
+      padding-bottom: 10px;
+    }
+
+  }
+
+  &__text {
+    @include grid(12);
+    position: relative;
+
+    &--grid6 {
+      @include grid(6);
+    }
+
+    &--grid8 {
+      @include grid(8);
+
+    }
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid(12);
+      }
+    }
+
+  }
+
+  &__slider {
+    @include grid(6);
+    position: relative;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid(12);
+      }
+    }
+  }
+
+  &__columns {
+    @include grid-container;
+    position: relative;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid(12);
+      }
+    }
+  }
+
+  &__gallery {
+    @include grid-container;
+    position: relative;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid-container;
+      }
+    }
+  }
+
+  &__work {
+    @include grid(12);
+    position: relative;
+    margin-bottom: 25px;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid(12);
+      }
+    }
+  }
+
+  &__aside {
+    position: relative;
+
+    &--grid4 {
+      @include grid(4);
+    }
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid(12);
+      }
+    }
+  }
+
+  &__quote {
+
+  }
+
+}

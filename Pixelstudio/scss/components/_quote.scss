@@ -1,0 +1,52 @@
+.b-quote {
+  position: relative;
+  font-family: $main-text-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: $quoute-text-color;
+  line-height: 21px;
+
+  padding: 0 20px;
+  margin: 25px 0;
+
+  &__text {
+
+  }
+
+  &__header {
+    font-size: 21px;
+  }
+
+  &__author {
+    font-style: normal;
+  }
+
+  &__bold-text {
+    font-weight: bold;
+  }
+
+  &__company {
+    font-style: normal;
+    color: $quoute-company-color;
+  }
+
+  &::after,
+  &::before {
+    font-size: 36px;
+    position: absolute;
+    line-height: 0;
+  }
+
+  &::after {
+    content: '\201d';
+    bottom: 0;
+    right: 4px;
+  }
+
+  &::before {
+    content: '\201c';
+    top: 18px;
+    left: -4px;
+  }
+
+}

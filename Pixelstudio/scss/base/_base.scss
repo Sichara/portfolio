@@ -1,0 +1,109 @@
+body {
+  background: url(../assets/img/pattern.png);
+  color: $main-text-color;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 21px;
+  font-size: 14px;
+  font-family: $main-text-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 30px 0 15px;
+}
+
+h3 {
+  font-size: 21px;
+  margin: 30px 0 15px;
+}
+
+h4 {
+  font-family: $main-text-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 21px;
+  margin: 30px 0 15px;
+}
+
+h5 {
+  font-family: $main-text-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  margin: 30px 0 15px;
+  padding-bottom: 12px;
+}
+
+.g-h2 {
+  font-size: 28px;
+  margin: 30px 0 15px;
+
+  &--header {
+    margin-top: 0;
+  }
+}
+
+.g-site-name {
+  color: $site-name-color;
+}
+
+.g-first-letter {
+  float: left;
+  font-size: 45px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.g-input {
+  @include border-radius(3px);
+  border: 1px solid $textbox-brd-color;
+  @include box-sizing(border-box);
+  padding: 5px;
+  height: 30px;
+
+  &--feedback {
+    width: 400px;
+  }
+
+}
+
+.g-textarea {
+  @include border-radius(3px);
+  border: 1px solid $textbox-brd-color;
+  @include box-sizing(border-box);
+  padding: 5px;
+
+  &--feedback {
+    width: 400px;
+  }
+}
+
+.g-btn {
+  color: $feedback-btn-color;
+  background: #fff;
+  border: 1px solid $feedback-brd-color;
+  @include border-radius(3px);
+  width: 70px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $feedback-btn-color;
+  }
+
+  &--feedback {
+    margin-left: 20px;
+  }
+}
+
+a {
+  color: $main-href-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

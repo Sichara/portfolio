@@ -1,0 +1,37 @@
+.b-social-list {
+  @include clearfix;
+
+  &__item {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  &__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+
+    &--facebook {
+      background-position: -5px -140px;
+    }
+
+    &--twitter {
+      background-position: -5px -169px;
+    }
+
+    &--flickr {
+      background-position: -5px -198px;
+    }
+
+    &--digg {
+      background-position: -5px -227px;
+    }
+
+    &--blogger {
+      background-position: -5px -256px;
+    }
+  }
+}

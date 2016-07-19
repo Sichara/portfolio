@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.bg--magenta {
+  background: #ef5158; }
+.bg--red {
+  background: #ba1b16; }
+.bg--gray {
+  background: #9a9a9a; }
+.bg--blue {
+  background: #5376e8; }
+
+.b-header {
+  background: #eedd66;
+  padding-bottom: 20px; }
+
+.b-menu {
+  list-style: none;
+  margin-bottom: 10px;
+  color: #000; }
+  .b-menu--vertical {
+    float: right;
+    width: 20%;
+    color: #fff;
+    display: block; }
+    .b-menu--vertical.active,
+    .b-menu--vertical .active {
+      display: block; }
+  .b-menu--horizontal {
+    display: inline-block;
+    width: 100%; }
+    .b-menu--horizontal.active,
+    .b-menu--horizontal .active {
+      display: inline-block; }
+  .b-menu_item {
+    list-style: none;
+    position: relative;
+    color: inherit;
+    display: inherit; }
+  .b-menu_link {
+    padding: 5px;
+    display: block;
+    color: inherit;
+    text-decoration: none; }
+    .b-menu_link:hover {
+      text-decoration: underline; }
+
+.b-sub-menu {
+  display: none; }
+
+.b-content {
+  width: 75%; }
+  .b-content::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both; }
+
+.b-viewport {
+  width: 100%;
+  max-width: 500px; }
+  .b-viewport_title {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px; }
+  .b-viewport_img {
+    width: 100%; }
+
+.b-footer {
+  background: #85c683;
+  position: absolute;
+  bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+
+.b-header {
+  position: relative;
+  @include grid-container;
+  @include clearfix;
+
+  &__content {
+    @include grid(12);
+    @include flexbox;
+    justify-content: space-between;
+    align-items: center;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid-container;
+      }
+    }
+  }
+
+  &__logo {
+    font-family: $logo-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  &__menu {
+
+  }
+
+  &--media-small {
+    @media screen and (max-width: $small) {
+      @include fluid-grid-container;
+    }
+  }
+}

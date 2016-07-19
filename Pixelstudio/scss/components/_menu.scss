@@ -1,0 +1,57 @@
+.b-menu {
+  @include flexbox;
+  align-content: center;
+  font-family: $header-link-font, Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  &__item {
+    text-align: center;
+    color: $menu-color;
+    border-bottom: 3px solid transparent;
+    margin: 0 10px;
+
+    &:hover,
+    &--active {
+      border-bottom: 3px solid $menu-color;
+    }
+  }
+
+  &__tab {
+    color: $menu-tabs-color;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    border: 1px solid transparent;
+    margin-right: 20px;
+
+    &:hover,
+    &--active {
+      background: $menu-tabs-color;
+      color: $menu-color;
+      border: 1px inset rgba(255, 255, 255, .8);
+      border-radius: 5px;
+
+      &::after {
+        content: '';
+        border: 7px solid transparent;
+        border-top: 6px solid $menu-tabs-color;
+        position: absolute;
+        left: 50%;
+        margin-left: -7px;
+        bottom: -12px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    width: inherit;
+    height: inherit;
+    color: inherit;
+    text-decoration: none;
+    font-size: $menu-font-size;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

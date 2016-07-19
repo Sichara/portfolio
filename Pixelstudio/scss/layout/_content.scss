@@ -1,0 +1,17 @@
+.b-content {
+  @include clearfix;
+
+  &__article {
+    @include grid-container;
+    @include clearfix;
+    margin-top: 65px;
+    margin-bottom: 130px;
+
+    &--media-small {
+      @media screen and (max-width: $small) {
+        @include fluid-grid-container;
+      }
+    }
+  }
+
+}

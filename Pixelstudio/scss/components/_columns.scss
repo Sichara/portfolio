@@ -1,0 +1,50 @@
+.b-columns {
+  @include flexbox;
+  padding-top: 20px;
+  margin: 20px 0;
+
+  &--with-border {
+    border-top: 1px dotted #ccc;
+  }
+
+  &__column {
+    @include grid(4);
+  }
+
+  &__header {
+    height: 21px;
+    font-size: 21px;
+    margin-bottom: 20px;
+
+    &--icon {
+
+      &::before {
+        content: '';
+        background-image: url(../assets/img/spritesheet.png);
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 21px;
+        float: left;
+        margin-right: 15px;
+      }
+    }
+
+    &--what::before {
+      background-position: -10px -5px;
+
+    }
+
+    &--how::before {
+      background-position: -10px -38px;
+    }
+
+    &--about::before {
+      background-position: -10px -68px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+}
